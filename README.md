@@ -24,7 +24,30 @@ The payment would be made in one single payment. This type of payment is suitabl
 # Search Engie Optimisation (SEO)
 <details>
 <summary>Why is it important?</summary>
+
 Having good SEO is important because it helps you rank higher in a search engines score which means your site will be found by more people on the internet, therefore, more potential customers will find your site and hopefully make purchases.
+</details>
+<details>
+<summary>How Google’s search engine works</summary>
+
+Google Search is a major piece of software that takes the keywords we put into it and searches the world wide web for sites related to them. It then brings these sites to the user in an order it thinks will be most useful to them. This order is referred to as ranking.
+
+Many factors go into the ranking system, including where the user lives, how up-to-date the page is, how other pages link to that page, frequency that the searched-for words appear on the page, if the keyword is in the page title, if the keyword has been bolded or if there are pictures with the keyword in the alt or title attribute just to name a few.
+
+The algorithm that Google uses to rank these pages is kept hidden to help safeguard against low quality spam websites that have been artificially boosted to rank higher in the search results. Google also uses Google Raters; humans employed by Google to teach their software which sites are of high quality and which are spam websites.
+</details>
+
+<details>
+<summary>Short-tail and Long-tail keywords</summary>
+
+Short-tail keyword, sometimes referred to as head terms, are one or two words long. The attract a wider selection of users, many of them not being your target audience and they are much more competitive. Long-tail keywords are often in comprised of phrases or sentences with a clear definition, mean less competition.
+</details>
+<details>
+<summary>Keyword Plan</summary>
+
+Below is a small table I used to brain dump and plan some potential short-term and long-term keywords for Fine Dials
+
+![A table I used to plan the short-tail and long-tail keywords for the site](readme_images/keyword_plan_table.png)
 </details>
 
 ## Home Page Content Plan
@@ -65,7 +88,41 @@ Having good SEO is important because it helps you rank higher in a search engine
 * Use links to encourage users to access different parts of my site
 * Feature the sections in the navigation bar
 
+# Web Marketing
+<details>
+<summary>Who are my users?</summary>
 
+The users for my site will vary, watches are desired by those from all age ranges and there are watches affordable to any income level so it is important to have a marketing strategy for the majority rather than the minority.
+</details>
+<details>
+<summary>What platforms would my users be on?</summary>
 
+A good amount of my users would be on social media platforms or content creation platforms such as YouTube in order to find more information on watches. There is a massive following for watch content creators on these kinds of platforms, looking for things such as reviews, updates on releases and guides on watches.
+</details>
+<details>
+<summary>Can I meet my user's needs with useful content?</summary>
 
+I believe that a fair portion of my user’s needs could be met with content creation, as a lot of people who are into watches tend to be enthusiasts who treat watch collecting more as a hobby and therefore get as much enjoyment from researching watches as they do buying them. If my site uses content creation as a place not only as a place to buy watches but also a place where people can learn about watches, then it will bring more potential customers.
+</details>
+<details>
+<summary>What marketing strategies do similar businesses employ?</summary>
 
+Commonly, similar businesses would use social media, content and influencer marketing as social media and content marketing help the brand build reputation and a relationship with their target customers and influencer marketing can help with impulse purchases as potential customers will see someone they idolise with a product and they will feel the need to buy this same product.
+</details>
+<details>
+<summary>Marketing types suitable to my Website</summary>
+
+* Content Marketing
+    * Effective content can evoke an emotional response, building trust and loyalty
+    * Content can be tuned to suit particular clients and customers
+    * Enables businesses to display their expertise and therefore will aid them to be perceived as trustworthy by users
+    * Improved chances of having content shared by clients
+    * Must work closely with other types of marketing, particularly SEO and Social Media Marketing
+    * Must be organised and consistent
+    * Content creation requires investment of resources and time
+* Organic social media marketing
+    * It is free to use
+    * A great way to build a relationship with potential customers
+    * It requires regular updates in order to remain visible
+    * However, paid social media marketing may force itself onto potential customer but it can be a financial waste if it is unsuccessful
+</details>
