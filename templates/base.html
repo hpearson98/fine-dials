@@ -34,7 +34,7 @@
   <body>
     <header class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{% url 'home' %}">
           <h2><strong>Fine Dials</strong></h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Mens</a>
@@ -64,8 +64,8 @@
               </div>
             </li>
             <li class="nav-item">
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <form method="GET" action="" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
             </li>
@@ -122,13 +122,13 @@
 
     <footer class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-lg-4 text-center">
           <P>CONTACT INFORMATION</P>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-4 text-center">
           <P>CUSTOMER SERVICE</P>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-4 text-center">
           <P>FOLLOW US ON</P>
         </div>
       </div>
