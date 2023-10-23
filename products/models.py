@@ -31,6 +31,21 @@ class Brand(models.Model):
         return self.name
 
 
+GENDER_CHOICES = (
+    ("MENS", "Men's"),
+    ("WOMENS", "Woman's"),
+)
+
+STYLE_CHOICES = (
+    ("DIVER", "Diver"),
+    ("DRESS", "Dress"),
+    ("CHRONOGRAPH", "Chronograph"),
+    ("PILOT/FIELD", "Pilot/Field"),
+    ("GMT", "GMT"),
+    ("CASUAL", "Casual"),
+    ("DIGITAL", "Digital"),
+)
+
 MOVEMENT_CHOICES = (
     ("AUTO", "Automatic"),
     ("QUARTZ", "Quartz"),
@@ -47,10 +62,24 @@ class Watch(models.Model):
         blank=False,
         on_delete=models.CASCADE
     )
+    gender = models.CharField(
+        choices=GENDER_CHOICES,
+        null=False,
+        blank=False,
+        max_length=10,
+        default="",
+    )
     model = models.CharField(
         null=False,
         blank=False,
         max_length=40,
+    )
+    style = models.CharField(
+        choices=STYLE_CHOICES,
+        null=False,
+        blank=False,
+        max_length=30,
+        default="",
     )
     description = models.TextField()
     movement = models.CharField(
@@ -69,6 +98,12 @@ class Watch(models.Model):
         blank=False,
         max_length=5,
     )
+    crystal = models.CharField(
+        null=False,
+        blank=False,
+        max_length=50,
+        default=""
+    )
     other_features = models.TextField()
     price = models.DecimalField(
         max_digits=6,
@@ -85,5 +120,8 @@ class Watch(models.Model):
         blank=True,
     )
 
+    class meta:
+        verbose_name_plural = 'Watches'
+
     def __str__(self):
-        return self.brand + self.model
+        return f"{self.brand}" + f" {self.model}"

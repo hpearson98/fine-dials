@@ -126,3 +126,23 @@ Commonly, similar businesses would use social media, content and influencer mark
     * It requires regular updates in order to remain visible
     * However, paid social media marketing may force itself onto potential customer but it can be a financial waste if it is unsuccessful
 </details>
+
+# Accreditations
+
+## Picture sources
+
+[Seiko Presage SRPB41](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2F-%2Fmedia%2FImages%2FProduct--Image%2FAll%2FSeiko%2F2022%2F02%2F20%2F01%2F55%2FSRPB41J1%2FSRPB41J1.png&tbnid=884EemFVsfUmFM&vet=12ahUKEwi5-LvRooCCAxWOpycCHR7NDpAQMygAegUIARDaAQ..i&imgrefurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2Fproducts%2Fpresage%2Fsrpb41j1&docid=k-eEakmqQxAcNM&w=1102&h=1102&q=seiko%20srpb41&ved=2ahUKEwi5-LvRooCCAxWOpycCHR7NDpAQMygAegUIARDaAQ)
+
+[Seiko Speedtimer SCC813](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2F-%2Fmedia%2FImages%2FProduct--Image%2FAll%2FSeiko%2F2022%2F02%2F20%2F04%2F36%2FSSC813P1%2FSSC813P1.png&tbnid=3FFEGC96P0qJeM&vet=12ahUKEwjQzv3Do4CCAxWqUaQEHTE4BDUQMygAegUIARCZAQ..i&imgrefurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2Fproducts%2Fprospex%2Fssc813&docid=-sCuAoJ-waQWGM&w=1102&h=1102&q=seiko%20scc813&ved=2ahUKEwjQzv3Do4CCAxWqUaQEHTE4BDUQMygAegUIARCZAQ)
+
+[Seiko 5 Sports SRPK29](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2F-%2Fmedia%2FImages%2FProduct--Image%2FAll%2FSeiko%2F2023%2F03%2F30%2F11%2F57%2FSRPK29K1%2FSRPK29K1.png%3Fmh%3D1000%26mw%3D1000%26hash%3DE4EFE839BFD041AD230FCF3CE2D82DAE&tbnid=29i9Fwq6gensnM&vet=12ahUKEwjs49udpIWCAxXtkScCHT5IBfUQMygAegUIARDsAQ..i&imgrefurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2Fproducts%2F5sports%2Fsrpk29&docid=XaeO0D6Tp6lLTM&w=1000&h=1000&q=seiko%20srpk29&ved=2ahUKEwjs49udpIWCAxXtkScCHT5IBfUQMygAegUIARDsAQ)
+
+[Seiko Alpinist SPB121](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcontent.thewosgroup.com%2Fproductimage%2F18280010%2F18280010_1.jpg%3Fimpolicy%3Dzoom&tbnid=voLC5DPeYVwv5M&vet=12ahUKEwj-ut75poWCAxXfmScCHfESCSUQ94IIKAB6BQgBEPkB..i&imgrefurl=https%3A%2F%2Fwww.goldsmiths.co.uk%2FSeiko-Prospex-Alpinist-Mens-Watch-SPB121J1%2Fp%2F18280010&docid=zZGB5a5ioRVCAM&w=1600&h=1600&q=seiko%20alpinist&ved=2ahUKEwj-ut75poWCAxXfmScCHfESCSUQ94IIKAB6BQgBEPkB)
+
+[Seiko Prospex Diver SPB143](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2F-%2Fmedia%2FImages%2FProduct--Image%2FAll%2FSeiko%2F2022%2F02%2F20%2F00%2F49%2FSPB143J1%2FSPB143J1.png&tbnid=LkW0BB01sn40CM&vet=12ahUKEwiAj-SZqYWCAxX_gycCHS1QCTkQMygAegUIARDsAQ..i&imgrefurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2Fproducts%2Fprospex%2Fspb143j1&docid=_YsabpGrHQRqSM&w=1102&h=1102&q=seiko%20spb143&ved=2ahUKEwiAj-SZqYWCAxX_gycCHS1QCTkQMygAegUIARDsAQ)
+
+[Hamilton Khaki Field Auto](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.hamiltonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2F7%2Fh70455133_1.png&tbnid=HO_OherxQRx4hM&vet=12ahUKEwiQroiyq4WCAxU3mScCHdBEAjMQMygAegUIARCpAg..i&imgrefurl=https%3A%2F%2Fwww.hamiltonwatch.com%2Fen-gb%2Fh70455133-khaki-field-auto.html&docid=3t_jDvcq1YcefM&w=1200&h=1200&q=hamilton%20khaki%20field%20automatic%2038mm&ved=2ahUKEwiQroiyq4WCAxU3mScCHdBEAjMQMygAegUIARCpAg)
+
+[Hamilton Khaki Aviation Day Date Auto](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.hamiltonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2F6%2Fh64615135.png&tbnid=QM8acK7D2d8soM&vet=12ahUKEwiP4YWLs4WCAxUnpicCHfRiDDgQMygAegUIARCDAg..i&imgrefurl=https%3A%2F%2Fwww.hamiltonwatch.com%2Fen-gb%2Fh64615135-khaki-aviation-pilot-day-date-auto.html&docid=XikjdsYVymNwKM&w=2000&h=2000&q=hamilton%20khaki%20aviation%20day%20date&ved=2ahUKEwiP4YWLs4WCAxUnpicCHfRiDDgQMygAegUIARCDAg)
+
+[Hamilton Jazzmaster Gent Auto](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwatchesofmayfair.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F789a43c4e9a5a1e754ee1289235666c4%2Fh%2Fa%2Fhamilton-jazzmaster-gent-quartz-h32451731_image-01.png&tbnid=YNGZ7SUlN2DqeM&vet=12ahUKEwiXu-XN9omCAxXJpicCHamRBToQMygQegUIARDTAg..i&imgrefurl=https%3A%2F%2Fwatchesofmayfair.com%2Fbrand%2Fhamilton%2Fjazzmaster-collection%2Fhamilton-jazzmaster-gent-quartz-h32451731&docid=c76a_PoPuP6qsM&w=1000&h=1000&q=hamilton%20jazzmaster%20quartz&ved=2ahUKEwiXu-XN9omCAxXJpicCHamRBToQMygQegUIARDTAg)
