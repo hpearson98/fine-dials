@@ -120,8 +120,8 @@ class Watch(models.Model):
         blank=True,
     )
 
-    class meta:
+    class Meta:
         verbose_name_plural = 'Watches'
 
     def __str__(self):
-        return f"{self.brand}" + f" {self.model}"
+        return f"{self.brand} {self.model}"
