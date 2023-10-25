@@ -2,7 +2,16 @@
 .search-bar {
     width: 100%;
 }
-
+/*----- Product sytling -----*/
+.overlay {
+    /* Used from Boutique Ado walkthrough */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left:0;
+    position: fixed;
+    z-index: 1;
+}
 /*-----  Form styling -----*/
 label {
     display: none;
