@@ -18,11 +18,11 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
                             {% if watch.image %}
-                            <a href="">
+                            <a href="{% url 'watch_detail' watch.id %}">
                                 <img class="card-img-top img-fluid" src="{{ watch.image.url }}" alt="{{ watch.brand }} {{ watch.name }}">
                             </a>
                             {% else %}
-                            <a href="">
+                            <a href="{% url 'watch_detail' watch.id %}">
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ watch.name }}">
                             </a>
                             {% endif %}
@@ -33,7 +33,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <p class="lead mb-0 text-left font-weight-bold">£{{ watch.price }}</p>
-                                        {% if product.rating %}
+                                        {% if watch.rating %}
                                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ watch.rating }} / 5</small>
                                         {% else %}
                                             <small class="text-muted">No Rating</small>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>{{ watch.brand }} {{ watch.model }}</h1>
+            {% if watch.image %}
+            <a href="{{ watch.image.url }}" target="_blank">
+                <img class="card-img-top img-fluid" src="{{ watch.image.url }}" alt="{{ watch.brand }} {{ watch.model }}">
+            </a>
+            {% else %}
+            <a href="">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ watch.brand }}{{ watch.model }}">
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-md-6">
+            <p>{{ watch.description }}</p>
+            <h2>Specifications</h2>
+            <p>{{ watch.movement }}</p>
+            <p>{{ watch.calibre }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
