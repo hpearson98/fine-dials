@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.db.models import Q
 from django.contrib import messages
 
-from .models import Watch
+from .models import Watch, Brand
 
 
 def all_watches(request):
@@ -11,6 +11,12 @@ def all_watches(request):
     """
     watches = Watch.objects.all()
     query = None
+    brands = None
+
+    if 'brand' in request.GET:
+        brands = request.GET['brand'].split(',')
+        watches = watches.filter(brand__name__in=brands)
+        brands = Brand.objects.filter(name__in=brands)
 
     if request.GET:
         if 'q' in request.GET:
@@ -32,6 +38,7 @@ def all_watches(request):
     context = {
         'watches': watches,
         'search_term': query,
+        'current_brands': brands,
     }
     return render(request, 'watches/watches.html', context)
 
