@@ -67,8 +67,8 @@
               </div>
             </li>
             <li class="nav-item">
-              <form method="GET" action="" class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+              <form method="GET" action="{% url 'watches' %}" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" name="q" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
             </li>
@@ -100,9 +100,9 @@
                   <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                   <p class="my-0">
                     {% if grand_total %}
-                      ${{ grand_total|floatformat:2 }}
+                      £{{ grand_total|floatformat:2 }}
                     {% else %}
-                      $0.00
+                      £0.00
                     {% endif %}
                   </p>
                 </div>
