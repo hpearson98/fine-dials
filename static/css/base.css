@@ -23,6 +23,22 @@
     z-index: 1;
 }
 */
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+a {
+    color: black;
+}
 /*-----  Form styling -----*/
 label {
     display: none;
