@@ -26,7 +26,7 @@
     <div class="col-12 col-md-6 order-md-first">
         <p class="text-muted mt-3 text-center text-md-left">
             {% if search_term or current_brands or current_sorting != 'None_None' %}
-                <span class="small"><a href="{% url 'watches' %}">Watches Home</a> | </span>
+                <span class="small"><a href="{% url 'watches' %}">All Watches</a> | </span>
             {% endif %}
             {{ watches|length }} Watches{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
         </p>
