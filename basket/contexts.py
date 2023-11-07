@@ -1,11 +1,24 @@
 from decimal import Decimal
 from django.conf import settings
+from django.shortcuts import get_object_or_404
+from products.models import Watch
 
 def basket_contents(request):
 
     basket_items = []
     total = 0
     product_count = 0
+    basket = request.session.get('basket', {})
+
+    for item_id, quantity in basket.items():
+        watch = get_object_or_404(Watch, pk=item_id)
+        total += quantity * watch.price
+        product_count += quantity
+        basket_items.append({
+            'item_id': item_id,
+            'quantity': quantity,
+            'watch': watch,
+        })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)

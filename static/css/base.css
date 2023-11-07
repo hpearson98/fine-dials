@@ -43,6 +43,13 @@
 a {
     color: black;
 }
+
+/*----- Watch detail styling -----*/
+
+.watch-detail-description {
+    margin-top: 1rem;
+}
+
 /*-----  Form styling -----*/
 label {
     display: none;
