@@ -36,7 +36,25 @@
                     <p class="mt-3"><strong>Quantity:</strong></p>
                     <div class="form-group w-50">
                         <div class="input-group">
-                            <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ watch.id }}" id="id_qty_{{ watch.id }}">
+                            <div class="input-group-prepend">
+                                <button class="decrement-qty btn btn-black rounded-0" 
+                                    data-item_id="{{ watch.id }}" id="decrement-qty_{{ watch.id }}">
+                                    <span class="icon">
+                                        <i class="fas fa-minus"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <input class="form-control qty_input" type="number" name="quantity" 
+                                value="1" min="1" max="99" data-item_id="{{ watch.id }}" 
+                                id="id_qty_{{ watch.id }}">
+                            <div class="input-group-append">
+                                <button class="increment-qty btn btn-black rounded-0"
+                                    data-item_id="{{ watch.id }}" id="increment-qty_{{ watch.id }}">
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <a href="{% url 'watches' %}" class="btn btn-outline-black rounded-0 mt-5 border-black">
@@ -56,4 +74,9 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'watches/includes/quantity_input_script.html' %}
 {% endblock %}

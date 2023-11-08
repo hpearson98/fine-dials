@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-*fij1$%7c8k!yyaj$sknrxz2=&xc5a(%f=5r-s%pxb&z@zhafi
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-hpearson98-finedials-ztmk34pm046.ws-eu105.gitpod.io'
+    '8000-hpearson98-finedials-ztmk34pm046.ws-eu106.gitpod.io'
 ]
 
 
