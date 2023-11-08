@@ -1,3 +1,11 @@
+/* General styling */
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /*----- Nav Bar Styling -----*/
 
 .search-bar {
