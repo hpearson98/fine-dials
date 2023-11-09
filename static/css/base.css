@@ -52,6 +52,23 @@ a {
     color: black;
 }
 
+/* Messgaes styling */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /*----- Watch detail styling -----*/
 
 .watch-detail-description {
