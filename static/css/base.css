@@ -69,6 +69,12 @@ a {
     height: 2px;
 }
 
+.basket-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /*----- Watch detail styling -----*/
 
 .watch-detail-description {
