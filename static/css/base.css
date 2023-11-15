@@ -6,6 +6,10 @@
     cursor: pointer;
 }
 
+.show {
+    display: block;
+}
+
 /*----- Nav Bar Styling -----*/
 
 .search-bar {
