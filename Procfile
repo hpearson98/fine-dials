@@ -1,0 +1,1 @@
+web: gunicorn fine-dials.wsgi:application
