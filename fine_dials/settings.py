@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-hpearson98-finedials-ztmk34pm046.ws-eu106.gitpod.io'
-    'https://fine-dials-fd29b5e3eda1.herokuapp.com/'
+    'fine-dials-fd29b5e3eda1.herokuapp.com'
 ]
 
 
