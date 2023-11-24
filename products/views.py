@@ -4,6 +4,7 @@ from django.db.models.functions import Lower
 from django.contrib import messages
 
 from .models import Watch, Brand
+from .forms import ProductForm
 
 
 def all_watches(request):
@@ -71,3 +72,13 @@ def watch_detail(request, watch_id):
         'watch': watch,
     }
     return render(request, 'watches/watch_detail.html', context)
+
+def add_watch(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'watches/add_watch.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
