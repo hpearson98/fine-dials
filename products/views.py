@@ -92,3 +92,26 @@ def add_watch(request):
     }
 
     return render(request, template, context)
+
+def edit_watch(request, watch_id):
+    """ Edit a product in the store """
+    watch = get_object_or_404(Watch, pk=watch_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=watch)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('watch_detail', args=[watch.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=watch)
+        messages.info(request, f'You are editing {watch.brand} {watch.model}')
+
+    template = 'watches/edit_watch.html'
+    context = {
+        'form': form,
+        'watch': watch,
+    }
+
+    return render(request, template, context)
