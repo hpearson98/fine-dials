@@ -115,3 +115,10 @@ def edit_watch(request, watch_id):
     }
 
     return render(request, template, context)
+
+def delete_watch(request, watch_id):
+    """ Delete a product from the store """
+    watch = get_object_or_404(Watch, pk=watch_id)
+    watch.delete()
+    messages.success(request, 'Product deleted!')
+    return redirect(reverse('watches'))

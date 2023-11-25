@@ -6,4 +6,5 @@ urlpatterns = [
     path('<int:watch_id>/', views.watch_detail, name='watch_detail'),
     path('add/', views.add_watch, name='add_watch'),
     path('edit/<int:watch_id>/', views.edit_watch, name='edit_watch'),
+    path('delete/<int:watch_id>/', views.delete_watch, name='delete_watch'),
 ]
