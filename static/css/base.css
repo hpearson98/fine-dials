@@ -20,6 +20,26 @@
     background: #000 !important;
 }
 
+/* footer styling */
+
+.social-media-wrapper > h2{
+ font-size: 2rem;
+}
+
+.social-media-links li {
+    list-style: none;
+}
+
+.social-media-links a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000000
+}
+
+.social-media-links a:hover {
+    color: rgb(31, 139, 4)
+}
+
 /*----- Home page styling -----*/
 
 .jtron {
@@ -28,17 +48,11 @@
     margin: 2rem;
 }
 
-/*----- Product sytling -----*/
-/* .overlay {
-    Used from Boutique Ado walkthrough 
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left:0;
-    position: fixed;
-    z-index: 1;
+.shop-now-button {
+    background-color: white;
 }
-*/
+
+/*----- Product sytling -----*/
 
 .border-black {
     border: 1px solid black !important;

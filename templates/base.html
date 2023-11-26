@@ -110,7 +110,7 @@
               <div class="dropdown-menu border-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
                   {% if request.user.is_superuser %}
-                    <a href="{% url 'add_watch' %}" class="dropdown-item">Product Management</a>
+                  <a href="{% url 'add_watch' %}" class="dropdown-item">Product Management</a>
                   {% endif %}
                   <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                   <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -219,6 +219,19 @@
             </div>
             <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
          </div>
+        </div>
+        <div class="col-md-6 social-media wraper">
+          <h2>
+            Follow us!
+          </h2>
+          <ul class="social-media-links">
+            <li>
+              <a href="https://en-gb.facebook.com/" aria-label="Link to Facebook" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            </li>
+            <li>  
+              <a href="https://www.instagram.com/" aria-label="Link to Instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

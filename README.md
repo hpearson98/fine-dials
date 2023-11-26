@@ -127,6 +127,48 @@ Commonly, similar businesses would use social media, content and influencer mark
     * However, paid social media marketing may force itself onto potential customer but it can be a financial waste if it is unsuccessful
 </details>
 
+## Agile Methodology
+The plan for this project was carried out using Agile Methodology. GitHub Issues were used to record the User Stories. These were made up of all the key functionality that a user would expect from a Restaurant website.
+
+Each Each User Story contains Acceptance Criteria and Tasks which I sometimes had to adjust during the process, as I wasn't yet sure what was required to achieve the Acceptance Criteria.
+
+To aid with prioritisation, I used The MoSCoW Method, which consisted of classifying each User Story as a 'Must Have', 'Should Have' or 'Could Have'. Some 'Could Have's didn't make it into the project and were left in the Backlog for a future iteration. It is important to note here, that by writing only enough User Stories to reach the Minimum Viable Product(MVP), 'Won't Have' was not included currently as a category.
+
+To summarise, I found using the Agile Methodology of great benefit as it helped me to better organise, prioritise and plan the development of my project. Although I didn't give myself a specific duration for each iteration, it greatly helped my time management. I also felt sense of achievement, ticking off the Tasks while working on a User Story and placing it in the 'Done' column when it was completed.
+
+## User Experience
+
+### Strategy / Site Objectives
+Fine Dials aims to be a place where people can purchase watches reliably and find links to relevant articles so they can find out more information on watches.
+
+Users can securely checkout their purchases and signup to view their order history and create a profile.
+
+The target audience is aimed and people of all ages
+
+### Scope / User Stories
+
+User stories can be found on [here](https://github.com/users/hpearson98/projects/3) in the projects or issues section on the Github repository.
+
+### Structure / Designs Choices
+
+The website is simple to use and consistent within its structure. The website was designed to be responsive on screens from 375px and above, making it great ti use from mobile to desktop.
+
+For desktop users the navigation bar shows the 'Fine Dials' logo and links to pages for different watch categories, 'profile' and 'logout' (for authenticated users) or 'Sign up' and 'Login' pages (for unauthenticated users). Super users also have an extra link: 'Product Management' which allows them to add, edit and delete products from the database. For users on a screen size of 990px or below the navigation bar will collapse down and be accessible via a burger button to save screen space and a more polished appearance. The navigation bar is repeated across all pages on the site, allowing for easy navigation.
+
+The Footer displays social media links which open in a separate tab for ease of use. It also displays the newsletter signup form which allows users to sign up to be added to a mailing list for more content. The footer is also repeated across all pages to keep the design uniform and for ease of access.
+
+The Home Page clearly indicates the purpose of the site with a jumbotron which will urge users to start browsing the collection of watches available
+
+The watches page allows the user to browse the watches available. Watches can be sorted by price, rating, or name.
+
+The Watch Details page allows users to view the details of the selected watch and allows them to add it to their basket.
+
+The basket page allows users to view their current basket, adjust the quantity of their items and move on to securely checkout their items.
+
+The checkout page allows users to input their delivery and payment information so they can confirm their payment.Once payment is made, users are then emailed a confirmation of their order.
+
+The Sign up / Login pages are clear and and display the fields in a familiar format to the user.
+
 # Accreditations
 
 ## Picture sources
@@ -146,3 +188,5 @@ Commonly, similar businesses would use social media, content and influencer mark
 [Hamilton Khaki Aviation Day Date Auto](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.hamiltonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2F6%2Fh64615135.png&tbnid=QM8acK7D2d8soM&vet=12ahUKEwiP4YWLs4WCAxUnpicCHfRiDDgQMygAegUIARCDAg..i&imgrefurl=https%3A%2F%2Fwww.hamiltonwatch.com%2Fen-gb%2Fh64615135-khaki-aviation-pilot-day-date-auto.html&docid=XikjdsYVymNwKM&w=2000&h=2000&q=hamilton%20khaki%20aviation%20day%20date&ved=2ahUKEwiP4YWLs4WCAxUnpicCHfRiDDgQMygAegUIARCDAg)
 
 [Hamilton Jazzmaster Gent Auto](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwatchesofmayfair.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F789a43c4e9a5a1e754ee1289235666c4%2Fh%2Fa%2Fhamilton-jazzmaster-gent-quartz-h32451731_image-01.png&tbnid=YNGZ7SUlN2DqeM&vet=12ahUKEwiXu-XN9omCAxXJpicCHamRBToQMygQegUIARDTAg..i&imgrefurl=https%3A%2F%2Fwatchesofmayfair.com%2Fbrand%2Fhamilton%2Fjazzmaster-collection%2Fhamilton-jazzmaster-gent-quartz-h32451731&docid=c76a_PoPuP6qsM&w=1000&h=1000&q=hamilton%20jazzmaster%20quartz&ved=2ahUKEwiXu-XN9omCAxXJpicCHamRBToQMygQegUIARDTAg)
+
+[Tissot PR100](https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.berrysjewellers.co.uk%2Fcdn%2Fshop%2Ffiles%2FGreen-PR-100.png%3Fv%3D1698245864%26width%3D2048&tbnid=WSzHsXa86ZcAtM&vet=12ahUKEwjgnrfczeGCAxXJV6QEHdy7DdEQ94IIKAN6BQgBEPYB..i&imgrefurl=https%3A%2F%2Fwww.berrysjewellers.co.uk%2Fproducts%2Fpr-100-steel-40mm-mens-quartz-bracelet-watch-1&docid=Z70aUoeowOQ7oM&w=1000&h=1000&itg=1&q=tissot%20pr100%20quartz&ved=2ahUKEwjgnrfczeGCAxXJV6QEHdy7DdEQ94IIKAN6BQgBEPYB)
