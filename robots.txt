@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+Sitemap: https://fine-dials-fd29b5e3eda1.herokuapp.com/sitemap.xml
