@@ -4,8 +4,8 @@ from django.db.models.functions import Lower
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-from .models import Watch, Brand
-from .forms import ProductForm
+from .models import Watch, Brand, Review
+from .forms import ProductForm, ReviewForm
 
 
 def all_watches(request):
@@ -69,9 +69,24 @@ def watch_detail(request, watch_id):
     This view shows the details of the selected watch
     """
     watch = get_object_or_404(Watch, pk=watch_id)
+    review = watch.reviews.order_by("-created_on")
+    form = ReviewForm()
+
+    if request.method == 'POST':
+        form = ReviewForm(data=request.POST)
+
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = request.user
+            review.watch = watch
+            review.save()
+
     context = {
         'watch': watch,
+        'form': form,
+        'review': review,
     }
+
     return render(request, 'watches/watch_detail.html', context)
 
 @login_required

@@ -127,6 +127,11 @@ Commonly, similar businesses would use social media, content and influencer mark
     * However, paid social media marketing may force itself onto potential customer but it can be a financial waste if it is unsuccessful
 </details>
 
+## Facebook Business Page Mockup
+
+Below is a mockup I create for a business page for Fine Dials using [Figma](https://www.figma.com/).
+![Facebook Business Page Mockup](readme_images/facebook_businesspage_mockup.png)
+
 ## Agile Methodology
 The plan for this project was carried out using Agile Methodology. GitHub Issues were used to record the User Stories. These were made up of all the key functionality that a user would expect from a Restaurant website.
 

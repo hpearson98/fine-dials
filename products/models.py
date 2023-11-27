@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 import datetime
 
@@ -125,3 +126,14 @@ class Watch(models.Model):
 
     def __str__(self):
         return f"{self.brand} {self.model}"
+
+
+class Review(models.Model):
+    watch = models.ForeignKey(Watch, related_name='reviews' ,on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(null=False, blank=False, max_length=50)
+    review = models.TextField(null=False, blank=False, max_length=250)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
