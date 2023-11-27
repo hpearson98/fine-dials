@@ -22,6 +22,10 @@
 
 /* footer styling */
 
+footer {
+    padding-top: 2rem;
+}
+
 .social-media-wrapper > h2{
  font-size: 2rem;
 }
