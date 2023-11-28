@@ -106,6 +106,15 @@ a {
 /*----- Watch detail styling -----*/
 
 .watch-detail-description {
+    margin-top: 1.5rem;
+}
+
+.watch-detail-title {
+    padding-top: 1.5rem;
+}
+
+.keep-shopping-btn {
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -113,6 +122,10 @@ a {
 
 input {
     width: 100%;
+}
+
+.review-form-title {
+    padding-top: 1.5rem;
 }
 
 /*----- Mail chimp -----*/

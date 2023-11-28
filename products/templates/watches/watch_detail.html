@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-            <h1>{{ watch.brand }} {{ watch.model }}</h1>
+            <h1 class="watch-detail-title">{{ watch.brand }} {{ watch.model }}</h1>
             {% if watch.image %}
             <a class="watch-detail-img" href="{{ watch.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{ watch.image.url }}" alt="{{ watch.brand }} {{ watch.model }}">
@@ -55,31 +55,50 @@
                             </div>
                         </div>
                     </div>
-                    <p>
-                        <a href="{% url 'watches' %}" class="btn btn-outline-black border-black">
-                            Keep Shopping
-                        </a>
-                    </p>
                     <input type="submit" class="btn btn-black mt-5 border-black" value="Add to Basket">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </form>
+            <button class="btn btn-outline-black border-black keep-shopping-btn">
+                <a href="{% url 'watches' %}">
+                    Keep Shopping
+                </a>
+            </button>
         </div>
         <div class="col-md-6">
 
         </div>
     </div>
     <div class="row">
+        {% if user.is_authenticated %}
         <div class="col">
+            <h3 class="review-form-title">Leave a review for the {{ watch.brand }} {{ watch.model }}</h3>
             <form class="mt-3" action="{% url 'watch_detail' watch.id %}" method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-black text-uppercase float-right" type="submit"></button>
-            </form>
-
+                <button class="btn btn-black border-black text-uppercase mx-auto" type="submit">Submit</button>
             </form>
         </div>
+        {% else %}
+        <div class="col">
+            <h3>Sign up or login to leave a review!</h3>
+        </div>
+        {% endif %}
     </div>
+    <h3 class="my-4">Reviews</h3>
+    {% for review in reviews %}
+    <div class="row">
+        <div class="col">
+            <div class="reviews-container overflow-scroll px-1 py-1">
+                <div class="review-wrapper px-3 my-3">
+                    <p>{{ review.title }}</p>
+                    <p>{{ review.body }}</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}
 

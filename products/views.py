@@ -15,6 +15,7 @@ def all_watches(request):
     watches = Watch.objects.all()
     query = None
     brands = None
+    styles = None
     sort = None
     direction = None
 
@@ -31,10 +32,16 @@ def all_watches(request):
                 sortkey = f'-{sortkey}'
             
             watches = watches.order_by(sortkey)
+
     if 'brand' in request.GET:
         brands = request.GET['brand'].split(',')
         watches = watches.filter(brand__name__in=brands)
         brands = Brand.objects.filter(name__in=brands)
+
+    if 'style' in request.GET:
+        styles = request.GET['style'].split(',')
+        watches = watches.filter(style__in=watches)
+        styles = Watch.objects.filter(style__in=watches)
 
     if request.GET:
         if 'q' in request.GET:
@@ -49,6 +56,8 @@ def all_watches(request):
                 brand__name__icontains=query
             ) | Q(
                 description__icontains=query
+            ) | Q(
+                style__icontains=query
             )
 
             watches = watches.filter(queries)
@@ -59,6 +68,7 @@ def all_watches(request):
         'watches': watches,
         'search_term': query,
         'current_brands': brands,
+        'current_styles': styles,
         'current_sorting': current_sorting,
     }
     return render(request, 'watches/watches.html', context)
@@ -67,24 +77,30 @@ def all_watches(request):
 def watch_detail(request, watch_id):
     """
     This view shows the details of the selected watch
+    and renders and posts the review form.
     """
     watch = get_object_or_404(Watch, pk=watch_id)
-    review = watch.reviews.order_by("-created_on")
+    reviews = watch.reviews.order_by("-created_on")
     form = ReviewForm()
 
     if request.method == 'POST':
-        form = ReviewForm(data=request.POST)
+        form = ReviewForm(request.POST)
 
         if form.is_valid():
             review = form.save(commit=False)
-            review.user = request.user
             review.watch = watch
+            review.user = request.user
             review.save()
-
+            messages.success(request, 'You successfully left a review!')
+        else:
+            messages.error(request, 'Failed to submit your review. Please ensure the form is valid.')
+        
+        form = ReviewForm()
+        
     context = {
         'watch': watch,
         'form': form,
-        'review': review,
+        'reviews': reviews,
     }
 
     return render(request, 'watches/watch_detail.html', context)

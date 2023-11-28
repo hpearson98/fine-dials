@@ -20,7 +20,8 @@ class ReviewForm(forms.ModelForm):
         model = Review
         exclude = (
             'user',
-            'creaded_on',
+            'created_on',
+            'watch',
         )
     
     def __init__(self, *args, **kwargs):
