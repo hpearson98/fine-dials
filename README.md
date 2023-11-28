@@ -363,3 +363,7 @@ Other sources I found useful:
 [Hamilton Jazzmaster Gent Auto](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwatchesofmayfair.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F789a43c4e9a5a1e754ee1289235666c4%2Fh%2Fa%2Fhamilton-jazzmaster-gent-quartz-h32451731_image-01.png&tbnid=YNGZ7SUlN2DqeM&vet=12ahUKEwiXu-XN9omCAxXJpicCHamRBToQMygQegUIARDTAg..i&imgrefurl=https%3A%2F%2Fwatchesofmayfair.com%2Fbrand%2Fhamilton%2Fjazzmaster-collection%2Fhamilton-jazzmaster-gent-quartz-h32451731&docid=c76a_PoPuP6qsM&w=1000&h=1000&q=hamilton%20jazzmaster%20quartz&ved=2ahUKEwiXu-XN9omCAxXJpicCHamRBToQMygQegUIARDTAg)
 
 [Tissot PR100](https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.berrysjewellers.co.uk%2Fcdn%2Fshop%2Ffiles%2FGreen-PR-100.png%3Fv%3D1698245864%26width%3D2048&tbnid=WSzHsXa86ZcAtM&vet=12ahUKEwjgnrfczeGCAxXJV6QEHdy7DdEQ94IIKAN6BQgBEPYB..i&imgrefurl=https%3A%2F%2Fwww.berrysjewellers.co.uk%2Fproducts%2Fpr-100-steel-40mm-mens-quartz-bracelet-watch-1&docid=Z70aUoeowOQ7oM&w=1000&h=1000&itg=1&q=tissot%20pr100%20quartz&ved=2ahUKEwjgnrfczeGCAxXJV6QEHdy7DdEQ94IIKAN6BQgBEPYB)
+
+## Acknowledgements
+* I would like to that my Mentor, Jack for their quality and continuous feedback.
+* I would like to thank Tutor Support for their amazing assistance.
