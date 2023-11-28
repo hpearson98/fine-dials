@@ -324,6 +324,26 @@ Forking allows you to view and edit the code without affecting the original repo
 
 # Accreditations
 
+## Code
+
+The walkthrough project listed below were used purely for inspiration. I used their ideas and methods and simply put them into the context of my own project.
+
+However, this project was the first time I create an e-commerce so I felt as though I had to rely on the walkthrough project. It was also the first time using services such as [Stripe](https://stripe.com/gb) and [AWS](https://aws.amazon.com/)
+* Code Institute - Boutique Ado
+
+Documentation I often refered to:
+* [Django documentation](https://docs.djangoproject.com/en/3.2/)
+* [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Django-Allauth documentation](https://django-allauth.readthedocs.io/en/latest/)
+
+Other sources I found useful:
+* 
+* 
+* 
+* 
+
+# Media
+
 ## Picture sources
 
 [Seiko Presage SRPB41](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2F-%2Fmedia%2FImages%2FProduct--Image%2FAll%2FSeiko%2F2022%2F02%2F20%2F01%2F55%2FSRPB41J1%2FSRPB41J1.png&tbnid=884EemFVsfUmFM&vet=12ahUKEwi5-LvRooCCAxWOpycCHR7NDpAQMygAegUIARDaAQ..i&imgrefurl=https%3A%2F%2Fwww.seikowatches.com%2Fuk-en%2Fproducts%2Fpresage%2Fsrpb41j1&docid=k-eEakmqQxAcNM&w=1102&h=1102&q=seiko%20srpb41&ved=2ahUKEwi5-LvRooCCAxWOpycCHR7NDpAQMygAegUIARDaAQ)
