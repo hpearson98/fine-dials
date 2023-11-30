@@ -39,9 +39,9 @@ def all_watches(request):
         brands = Brand.objects.filter(name__in=brands)
 
     if 'style' in request.GET:
+        query = request.GET['style']
         styles = request.GET['style'].split(',')
-        watches = watches.filter(style__in=watches)
-        styles = Watch.objects.filter(style__in=watches)
+        watches = watches.filter(style=query)
 
     if request.GET:
         if 'q' in request.GET:

@@ -1,13 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&family=Unna:wght@400;700&display=swap');
+
 /* General styling */
 
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
-}
-
-.show {
-    display: block;
 }
 
 .btn-outline-black {
