@@ -57,7 +57,7 @@
                                     <div class="col">
                                         <p class="lead mb-0 text-left font-weight-bold">£{{ watch.price }}</p>
                                         <p class="small mt-1 mb-0">
-                                            <a class="text-muted" href="{% url 'watches' %}?style={{ watch.style.name }}">
+                                            <a class="text-muted" href="{% url 'watches' %}?style={{ watch.style }}">
                                                 <i class="fas fa-tag mr-1"></i>{{ watch.get_style_display }}
                                             </a>
                                         </p>
