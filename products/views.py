@@ -16,6 +16,7 @@ def all_watches(request):
     query = None
     brands = None
     styles = None
+    gender = None
     sort = None
     direction = None
 
@@ -42,6 +43,11 @@ def all_watches(request):
         query = request.GET['style']
         styles = request.GET['style'].split(',')
         watches = watches.filter(style=query)
+    
+    if 'gender' in request.GET:
+        query = request.GET['gender']
+        styles = request.GET['gender'].split(',')
+        watches = watches.filter(gender=query)
 
     if request.GET:
         if 'q' in request.GET:

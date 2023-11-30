@@ -10,6 +10,28 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-outline-black">
+                <a href="{% url 'watches' %}?gender=MENS">
+                    Mens
+                </a>
+            </button>
+            <button class="btn btn-outline-black">
+                <a href="{% url 'watches' %}?gender=WOMENS">
+                    Womens
+                </a>
+            </button>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 order-md-first">
+        <p class="text-muted mt-3 text-center text-md-left">
+            {% if search_term or current_brands or current_sorting != 'None_None' %}
+                <span class="small"><a href="{% url 'watches' %}">All Watches</a> | </span>
+            {% endif %}
+            {{ watches|length }} Watches{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+        </p>
+    </div>
     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
         <div class="w-50">
             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -22,14 +44,6 @@
                 <option value="model_desc" {% if current_sorting == 'model_desc' %}selected{% endif %}>Name (Z-A)</option>
             </select>
         </div>
-    </div>
-    <div class="col-12 col-md-6 order-md-first">
-        <p class="text-muted mt-3 text-center text-md-left">
-            {% if search_term or current_brands or current_sorting != 'None_None' %}
-                <span class="small"><a href="{% url 'watches' %}">All Watches</a> | </span>
-            {% endif %}
-            {{ watches|length }} Watches{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-        </p>
     </div>
 </div>
     <div class="row">
