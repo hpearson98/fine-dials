@@ -6,7 +6,8 @@
     <div class="col-md-6">
         <h1>Watches</h1>
 
-        <p>Watches aren't just about keeping time. They symbolise sophistication, elegance and hertitage. 
+        <p>
+            Watches aren't just about keeping time. They symbolise sophistication, elegance and hertitage. 
             They are passed down through generations and are used to commemerate an occasion or a milestone. 
             
             Browse our amazing selection of Men's and Women's watches to find the perfect watch for you.
@@ -18,15 +19,24 @@
         </h1>
         <div class="my-5">
             <h4>
-                <a href="{% url 'watches' %}" class="shop-now-button btn text-uppercase">Shop Now</a>
+                <button class="btn btn-outline-black">
+                    <a href="{% url 'watches' %}?gender=MENS">
+                        Mens
+                    </a>
+                </button>
+                <button class="btn btn-outline-black">
+                    <a href="{% url 'watches' %}?gender=WOMENS">
+                        Womens
+                    </a>
+                </button>
             </h4>
         </div>
     </div>    
 </div>
-<div class="row">
+<div class="row mx-5">
     <div class="col">
         <h2>
-            Blogs
+            Related Watch Articles
         </h2>
         <p>
             If you are interested in Watches and would like to learn more, 
@@ -34,18 +44,43 @@
         </p>
     </div>
 </div>
-<div class="row">
+<div class="row mx-5 my-4 py-2 border-black rounded">
     <div class="col">
-        <h3>
-            <a href="https://www.ablogtowatch.com" rel="external" target="_blank">
-                A Blog to Watch
-            </a>
-        </h3>
-        <p>
-            Since 2007, A Blog to Watch have been producing some of the greatest artciles on watches. 
-            Their content include watch reviews, buying guides, from budget to luxury and an abundance 
-            of great information on watches.
-        </p>
+        <a href="https://www.ablogtowatch.com" rel="external" target="_blank" class="blog-link">
+            <h3>Blog to Watch</h3>
+            <p>
+                Since 2007, A Blog to Watch have been producing some of the greatest artciles on watches. 
+                Their content include watch reviews, buying guides, from budget to luxury and an abundance 
+                of great information on watches.
+            </p>
+        </a>
+    </div>
+</div>
+<div class="row mx-5 my-4 py-2 border-black rounded">
+    <div class="col">
+        <a href="https://www.hodinkee.com/" rel="external" target="_blank" class="blog-link">
+            <h3>Hodinkee</h3>
+            <p>
+                Hodinkee have created a huge library of watch-based content, with articles on 
+                watch reviews, watch brands and the latest news in the watch industry. Hodinkee 
+                has been a relaible source of information on watches since 2008.
+            </p>
+        </a>
+    </div>
+</div>
+<div class="row mx-5 my-4 py-2 border-black rounded">
+    <div class="col">
+        <a href="https://teddybaldassarre.com/en-gb/blogs/watches" rel="external" target="_blank" class="blog-link">
+            <h3>Teddy Baldassarre</h3>
+            <p>
+                Teddy Baldassarre is world reknown for producing the most high quality watch 
+                content to date. He covers watches in all price ranges with detailed individual 
+                reviews, wacth recommendations for different price ranges, styles and brands, 
+                and he also makes very well research buying guides for those that are on a 
+                budget to those that have no budget. On top of all that he has one of the most 
+                successful watch-based YouTube channels out there.
+            </p>
+        </a>
     </div>
 </div>
 {% endblock %}

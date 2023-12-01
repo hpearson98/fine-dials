@@ -2,6 +2,17 @@
 
 /* General styling */
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Unna', serif;
+}
+
 .btt-link,
 .update-link,
 .remove-item {
@@ -32,6 +43,7 @@ button > a {
 
 footer {
     padding-top: 2rem;
+    background-color: #000;
 }
 
 .social-media-wrapper > h2{
@@ -60,8 +72,19 @@ footer {
     margin: 2rem;
 }
 
+.jtron-white {
+    background: #ffffff;
+    color: #000000;
+    margin: 2rem;
+}
+
 .shop-now-button {
     background-color: white;
+}
+
+.blog-link:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 /*----- Product sytling -----*/
