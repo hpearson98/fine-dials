@@ -176,9 +176,31 @@ The Sign up / Login pages are clear and and display the fields in a familiar for
 
 #### Database Schema
 
-One custom model has been implemented for this project: Reservation.
+Three custom models have been implemented for this project:
+* Watch
+* Brand
+* Review
 
 ![This is an image of my Entity Relatated Diagram](readme_images/fine_dials_erd.png)
+
+# Testing
+## Header and Nav Bar
+### Logo link
+#### Expected Result
+When a user clicks the Logo link in the nav bar, they should be taken to the home page.
+
+#### Actual Outcome
+When the user clicks the logo link, the user is directed to the home page as expected.
+
+## Footer
+
+## Home Page
+
+## Watches Page
+
+## Watch Detail Page
+
+## 
 
 ## Deployment
 

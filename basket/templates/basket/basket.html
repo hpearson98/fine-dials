@@ -3,9 +3,9 @@
 {% load basket_tools %}
 
 {% block content %}
-<h2>Shopping Basket</h2>
-<div class="row">
+<div class="row mx-5 my-3">
     <div class="col">
+        <h2>Shopping Basket</h2>
         {% if basket_items %}
         <div class="table-responsive rounded">
             <table class="table table-sm table-borderless">
@@ -80,14 +80,11 @@
                 </tr>
                 <tr>
                     <td colspan="5" class="text-right">
-                        <a href="{% url 'watches' %}" class="btn btn-outline-black btn-lg">
+                        <a href="{% url 'watches' %}" class="btn btn-outline-black btn-lg" role="button">
                             Keep Shopping
                         </a>
-                        <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                            <span class="text-uppercase">Secure Checkout</span>
-                            <span class="icon">
-                                <i class="fas fa-lock"></i>
-                            </span>
+                        <a href="{% url 'checkout' %}" class="btn btn-outline-black btn-lg" role="button">
+                            Secure Checkout <i class="fas fa-lock"></i>
                         </a>
                     </td>
                 </tr>
@@ -95,11 +92,8 @@
         </div>
         {% else %}
             <p class="lead mb-5">Your basket is empty.</p>
-            <a href="{% url 'watches' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Keep Shopping</span>
+            <a href="{% url 'watches' %}" class="btn btn-outline-black rounded btn-lg">
+                <span>Keep Shopping</span>
             </a>
         {% endif %}
     </div>

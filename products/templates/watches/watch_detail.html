@@ -4,8 +4,7 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
-            <h1 class="watch-detail-title">{{ watch.brand }} {{ watch.model }}</h1>
+        <div class="col-md-6 pt-3">
             {% if watch.image %}
             <a class="watch-detail-img" href="{{ watch.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{ watch.image.url }}" alt="{{ watch.brand }} {{ watch.model }}">
@@ -16,7 +15,8 @@
             </a>
             {% endif %}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 pt-3">
+            <h1 class="watch-detail-title">{{ watch.brand }} {{ watch.model }}</h1>
             <p class="watch-detail-description">{{ watch.description }}</p>
             <h2>Specifications</h2>
             <p>Movement: {{ watch.get_movement_display }}</p>
@@ -28,6 +28,16 @@
     </div>
     <div class="row">
         <div class="col-md-6 text center">
+            {% if request.user.is_superuser %}
+                <div class="ml-3">
+                    <a href="{% url 'edit_watch' watch.id %}">
+                        <i class="fa-solid fa-pencil"></i>
+                    </a> | 
+                    <a class="text-danger" href="{% url 'delete_watch' watch.id %}">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </a>
+                </div>
+            {% endif %}
             <form class="form" action="{% url 'add_to_basket' watch.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
@@ -59,7 +69,7 @@
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </form>
-            <button class="btn btn-outline-black border-black keep-shopping-btn">
+            <button class="btn border-black keep-shopping-btn">
                 <a href="{% url 'watches' %}">
                     Keep Shopping
                 </a>
