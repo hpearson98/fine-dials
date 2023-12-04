@@ -192,6 +192,73 @@ When a user clicks the Logo link in the nav bar, they should be taken to the hom
 #### Actual Outcome
 When the user clicks the logo link, the user is directed to the home page as expected.
 
+### Home link
+#### Expected Result
+When a user clicks the home link in the nav bar they should be taken to the home page.
+
+#### Actual Outcome
+When the user clicks the home link, the user is directed to the home page as expected.
+
+### All Watches - By Price
+#### Expected Result
+When the user clicks the all watches - by price link in the nev bar, they should be taken to the watches url and displayed all watch products in the order of price lowest to highest.
+
+#### Actual Outcome
+When the the all watches - by price link is clicked, the user is taken to the watches page and displayed all watch products from price lowest to highest.
+
+### All watches - By Rating
+#### Expected Result
+When the user clicks the all watches - by rating link, they should be taken to the watches page and displayed all watches in order of rating highest to lowest.
+
+#### Actual Outcome
+When the user clicks the all watches - by rating link, they are taken to the watches page and sown all watches in the order of rating highest to lowest, as expected.
+
+### All Watches - By Style
+#### Expected Result
+When the user clicks the all watches - by style link, they should be taken to the watches page and displayed all watches, with watches of the same style grouped together.
+
+#### Actual Outcome
+When the user clicks the all watches - by style link, they are taken to the watches page and displayed all watches, with watches of the same style grouped together, as expected.
+
+### All Watches - All Products
+#### Expected Result
+When the user clicks the all watches - all products link, they should be taken to the watches page and displayed all watches.
+
+#### Actual Outcome
+When the use clicks the all watches - all products link, they are taken to the watches page and displayed all watches, as expected.
+
+### Brands Links
+#### Expected Result
+When the user clicks a link from the brands dropdown, they should be taken to the watches page and displayed all the watches produced by the brand that the user clicks on. For example if the user chooses Tissot then all watches made by Tissot should be displayed to the user.
+
+#### Actual Outcome
+When the user clicks a link from the brands dropdown, they are taken to the watches page and displayed all the watches produced by the brand that the user has clicks on. This works for any brand the user clicks on.
+
+### Style Links
+#### Expected Result
+When the user clicks a link from the styles dropdown, they should be taken to the watches page and displayed all the watches that match the style that the user clicks on. For example if the user chooses Dress then all dress watches should be displayed to the user regardless of brand or any other factor.
+
+#### Actual Outcome
+When the user clicks a link from the style dropdown, they are taken to the watches page and displayed all the watches that match the style that the user clicks on. This works for any style the user clicks on.
+
+### Search Bar
+#### Expected Result
+When a user inputs a query into the search bar, their query should be taken and if any watches brand name, watch model, watch description or the watch style contain the query, then those watches should be displayed to the user.
+
+#### Actual Outcome
+When a user inputs a query into the search bar, their query is taken be taken and if any watches brand name, watch description or the watch style contain the query, then those watches are displayed to the user. However the watch model is not taken into account.
+
+#### Issue
+When the user inputs a query into the search bar, it is not queried against the watch model to chech if the query is contained in the watch model field of any watch on the database.
+
+#### How the Issue Was Resolved
+In the view function that checks for queries made in the search bar, I added the code to check if the watch model contains the query. The code can be found below:
+```
+Q(
+    model__icontains=query
+)
+```
+
 ## Footer
 
 ## Home Page

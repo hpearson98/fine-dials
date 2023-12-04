@@ -61,6 +61,8 @@ def all_watches(request):
             queries = Q(
                 brand__name__icontains=query
             ) | Q(
+                model__icontains=query
+            ) | Q(
                 description__icontains=query
             ) | Q(
                 style__icontains=query
