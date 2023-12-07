@@ -259,11 +259,86 @@ Q(
 )
 ```
 
+### Account - Register Link
+#### Expected Result
+When the user clicks the account - register link, they should be taken to the registration page where there is a sign up form prompting the user to create an account.
+
+#### Actual Outcome
+When the user clicks the account - register link, they are taken to the registration page where there is a sign up form prompting them to create an account.
+
+### Unauthenticated User's Nav Bar
+#### Expected Result
+When the user is unauthenticated the user's account dropdown links should be registration and login so they can access page to create an account or login to an existing one.
+
+#### Actual Outcome
+When the user is unauthenticated the user's account dropdown links are registration and login so they can access page to create an account or login to an existing one, as expected.
+
+### Authenticated User's Nav Bar
+#### Expected Result
+When the user is authenticated the user's account dropdown links should be profile and logout so they can access their profile page or logout of their account.
+
+#### Actual Outcome
+When the user is authenticated the user's account dropdown links are profile and logout so they can access their profile page logout of their account, as expected.
+
+### Authenticated Super User's Nav Bar
+#### Expected Result
+When the super user is authenticated the account dropdown links should be product management, profile and logout so they can manage products on the databaase, access their profile page or logout of their account.
+
+#### Actual Outcome
+When the super user is authenticated the account dropdown links are product management, profile and logout so they can manage products on the databaase, access their profile page or logout of their account, as expected.
+
+### Account - Login Link
+#### Expected Result
+When the user clicks the account - login link, they should be taken to the login page where there is a login form prompting the user to login to their account.
+
+#### Actual Outcome
+When the user clicks the account - login link, they are taken to the login page where there is a login form prompting the user to login to their account.
+
+### Basket Link
+#### Expected Result
+The basket link should show the current basket value to the user. When the user clicks the link they should be taken to the basket page, where they can view their current basket.
+
+#### Actual Outcome
+The basket link shows the current basket value to the user. When the user clicks the link they are taken to the basket page, where they can view their current basket.
+
 ## Footer
 
+### Mailchimp sign-up form
+#### Expected Result
+The Mailchimp sign-up form should be validated to only submit if the user inputs a valid email address. The user should be able to optionally input first and last names. The form should successfully add the submitted form details to the Mailchimp mailing list.
+
+#### Actual Outcome
+The Mailchimp sign-up form is validated to only sumbit if the user inputs a vaid email address. The user can optionally input first and last names. The form successfully adds the submitted form details to the Mailchimp mailing list. Below is a screenshot of contacts that have successfully added form the sign-up form.
+![Screenshot of Mailchimp contacts](readme_images/mailchimp_contacts.png)
+
+### Social Media Links
+#### Expected Result
+The social media links should have a hover effect that changes the font to help make them intuitive and they should take the user to the correct site, in a new tab so the user is not removed from the site.
+
+#### Actual Outcome
+The social media links have a hover effect that changes the font to help make them intuitive and they take the user to the correct site, in a new tab so the user is not removed from the site.
+
 ## Home Page
+### Mens and Womens Buttons
+#### Expected Result
+When the user uses these buttons, they should be taken to the watches page and shown all mens watches in the database or all womens watches in the database, depending on the button they click.
+
+#### Actual Outcome
+When the user uses these buttons, they are taken to the watches page and shown all mens watches in the database or all womens watches in the database, depending on the button they click.
+
+### Related Blog Links
+#### Expected Result
+When the user clicks a link to a blog, they should be taken to the blog they clicked on. The blog should open in a new tab so the user is not taken away from the website.
+#### Actual Outcome
+When the user clicks a link to a blog, they are taken to the blog they clicked on. The blog opens in a new tab so the user is not taken away from the website.
 
 ## Watches Page
+### Product Card
+#### Expected Result
+The product card should display the watch image, brand, model, price, style and rating. The watch style should be a link that takes the user to all watches of the same style. If there is no image, the placeholder image should be displayed.
+#### Actual Outcome
+The product card displays the watch image, brand, model, price, style and rating. The watch style successful functions as a link that takes the user to all watches of the same style. If there is no image, the placeholder image is displayed.
+
 
 ## Watch Detail Page
 
