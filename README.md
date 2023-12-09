@@ -433,6 +433,48 @@ This button should take the user to the checkout page, where they can finish the
 #### Actual Outcome
 This button takes the user to the checkout page, where they can finish their checkout.
 
+## Checkout Page
+### Checkout Form
+#### Expected Result
+The checkout form should require the first name, last name, a valid email address, phone number, street address 1, street address 2 and town/city fields to be complete. It should also require valid payment details.
+
+If the save payment details checkbox is chequed then it should save the form values and transfer and save to the users profile.
+#### Actual Outcome
+The checkout form requires the first name, last name, a valid email address, phone number, street address 1, street address 2 and town/city fields to be complete. It also requires valid payment details.
+
+If the save payment details checkbox is chequed then it saves the form values and transfer and save to the users profile.
+
+### Delivery Cost
+#### Expected Result
+If the order total is greater than or equal to £50, there should be no delivery fee.
+#### Actual Outcome
+If the order total is greater than or equal to £50, there is no delivery fee.
+
+### Checkout Confirmation Email
+#### Expected result
+When an order is successfully processed, it should send a confirmation email to the email address submitted in the chechout form. It should include key details such as order total, delivery total, grand total, order number and when the order was made.
+#### Actual Outcome
+When an order is successfully processed, it sends a confirmation email to the email address submitted in the chechout form. It includes key details such as order total, delivery total, grand total, order number and when the order was made.
+
+### Checkout Success
+#### Expected Result
+When an order is successfully processed, the user should be taken to the checkout success page where all of the key details of their order confirmation can be viewed.
+#### Actual Outcome
+When an order is successfully processed, the user is taken to the checkout success page where all of the key details of their order confirmation can be viewed.
+
+## Profile Page
+### Order History
+#### Expected Result
+The user should be able to see an overview of all of their previous orders. There should also be a link on each order summary to take them to the complete order details page for the order they choose to view.
+#### Actual Outcome
+The user should be able to see an overview of all of their previous orders. There should also be a link on each order summary to take them to the complete order details page for the order they choose to view.
+
+### Profile Details Form
+#### Expected Result
+The profile details form should hold all relevant information for the user and it should be able to be updated by the user and saved. This information should then be transfered across to the checkout form for convience and a faster checkout so the user does not have to put in their information for each order.
+#### Actual Outcome
+The profile details form holds all relevant information for the user and it is be able to be updated by the user and saved. However, this information is not transfered across to the checkout form for convience and a faster checkout so the user does not have to put in their information for each order.
+#### What Was Done to Fix the Issue?
 ## Further Testing
 
 ### Google Chrome DevTools Lighthouse
@@ -441,7 +483,8 @@ I run the project twice through Lighthouse in Google Chrome DevTools; once in mo
 ![Image of Lighthouse results for mobile](readme_images/fine_dials_lighthouse_mobile.png)
 
 * Lighthouse - Desktop:
-![Image of Lighthouse results for desktop](readme_images/fine_dials_lighthouse_desktop.png)
+![Image of Lighthouse results for desktop]
+(readme_images/fine_dials_lighthouse_desktop.png)
 
 #### Cross Platform testing
 * The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safar browsers.
