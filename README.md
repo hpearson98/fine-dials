@@ -339,10 +339,52 @@ The product card should display the watch image, brand, model, price, style and 
 #### Actual Outcome
 The product card displays the watch image, brand, model, price, style and rating. The watch style successful functions as a link that takes the user to all watches of the same style. If there is no image, the placeholder image is displayed.
 
+### Sort functionality
+#### Expected Result
+Users should be able to sort the products on the page by price - highest to lowest, price - lowest to highest, rating - highest to lowest, rating - lowest to highest, name - A-Z or name - Z-A. It should keep the items on the page that the user requested (for example if the user wanted to look at all dive watches and then sort price - lowest - highest, when the page should not refresh and display all watches).
+#### Actual Outcome
+Users are able to sort the products on the page by price - highest to lowest, price - lowest to highest, rating - highest to lowest, rating - lowest to highest, name - A-Z or name - Z-A (the sorting by name does not take the brand into account, just the model name). It keeps the items on the page that the user requested (for example if the user wanted to look at all dive watches and then sort price - lowest - highest, when the page does not refresh and display all watches).
+
+### Mens and Womens Buttons
+#### Expected Result
+When the user uses these buttons, they should be taken to the watches page and shown all mens watches in the database or all womens watches in the database, depending on the button they click.
+
+#### Actual Outcome
+When the user uses these buttons, they are taken to the watches page and shown all mens watches in the database or all womens watches in the database, depending on the button they click.
+
+### Displayed Products Counter
+#### Expected Result
+The displayed products counter should display the amount of watches are being displayed to the user depending on the search query results.
+#### Actual Outcome
+The displayed products counter displays the amount of watches are being displayed to the user depending on the search query results, as intended.
 
 ## Watch Detail Page
+### Watch Overview
+#### Expected Result
+The watch overview should display the watch name, image, description, movement, calibre, water resistance, crystal and all other features, in order to inform the user of all relevant information on the watch. The image, when clicked should display the full image to the user in a diffent tab.
+#### Actual Outcome
+The watch overview displays the watch name, image, description, movement, calibre, water resistance, crystal and all other features, in order to inform the user of all relevant information on the watch. The image, when clicked, displays the full image to the user in a diffent tab.
 
-## 
+### Quantity Controls
+#### Expected Result
+The quantity should be able to be adjusted via the add or minus buttons or input manually into the input field provided. If the current quantity is 1 or below then the minus buttin should be disabled so the user cannot enter an invalid number. If the user manually inputs a number less than 1 and tries to add it to the basket they should be given an error saying the number must be greater than or equal to 1.
+#### Actual Outcome
+The quantity is be able to be adjusted via the add or minus buttons or input manually into the input field provided. If the current quantity is 1 or below then the minus buttin is disabled so the user cannot enter an invalid number. If the user manually inputs a number less than 1 and tries to add it to the basket they are given an error saying the number must be greater than or equal to 1.
+### Add to Basket Button
+#### Expected Result
+The add to basket button should add the current watch that the user is viewing and their selected quantity to the basket. They should receive an alert indicating the item or items were added successfully, a preview of their updated basket, showing the items in the basket and the updated price.
+#### Actual Outcome
+The add to basket button adds the current watch that the user is viewing and their selected quantity to the basket. They receive an alert indicating the item or items were added successfully, a preview of their updated basket, showing the items in the basket and the updated price.
+
+### Keep Shopping Button
+#### Expected Result
+The keep shopping button should take the user back to the watches page, displaying watches for sale to the user.
+
+#### Actual Outcome
+The button works as expected, however the button does not function properly as you need to click the text in order for the link to work. And the text in the button, when hovered, has add text decoration, which is not desired.
+
+#### What Was Done to Resolve the Issue?
+To resolve the issue I simply removed the button element and just used an anchor element and used css to style it like a button. This made the whole area of the button clickable and functional.
 
 ## Deployment
 

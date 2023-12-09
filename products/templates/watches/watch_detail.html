@@ -69,10 +69,9 @@
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
             </form>
-            <button class="btn border-black keep-shopping-btn">
-                <a href="{% url 'watches' %}">
-                    Keep Shopping
-                </a>
+            <a href="{% url 'watches' %}" class="btn btn-outline-black keep-shopping-btn">
+                Keep Shopping
+            </a>
             </button>
         </div>
         <div class="col-md-6">
