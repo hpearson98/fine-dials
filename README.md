@@ -455,6 +455,14 @@ If the order total is greater than or equal to £50, there is no delivery fee.
 When an order is successfully processed, it should send a confirmation email to the email address submitted in the chechout form. It should include key details such as order total, delivery total, grand total, order number and when the order was made.
 #### Actual Outcome
 When an order is successfully processed, it sends a confirmation email to the email address submitted in the chechout form. It includes key details such as order total, delivery total, grand total, order number and when the order was made.
+![Screenshot of email confirmation](readme_images/fine_dials_email_confirmation.png)
+
+### Stripe API Link
+#### Expected Result
+When an order is processed successfully, to show it has been successfully received by Stripe it should be logged as an event on Stripe as proof that the API is linked successfully.
+#### Actual Outcome
+When an order is processed successfully, to show it has been successfully received by Stripe it is logged as an event on Stripe as proof that the API is linked successfully. Below is a screenshot of the Stripe Events Page.
+![Screenshot of Stripe Events tab as proof of API link](readme_images/fine_dials_stripe_payments.png)
 
 ### Checkout Success
 #### Expected Result
@@ -483,8 +491,7 @@ I run the project twice through Lighthouse in Google Chrome DevTools; once in mo
 ![Image of Lighthouse results for mobile](readme_images/fine_dials_lighthouse_mobile.png)
 
 * Lighthouse - Desktop:
-![Image of Lighthouse results for desktop]
-(readme_images/fine_dials_lighthouse_desktop.png)
+![Image of Lighthouse results for desktop](readme_images/fine_dials_lighthouse_desktop.png)
 
 #### Cross Platform testing
 * The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safar browsers.
@@ -522,6 +529,51 @@ SQLite3 - The database provided by Django
 [Stripe](https://stripe.com/gb) - Used for payment processing services
 [Mailchimp](https://mailchimp.com/) - Used for email marketing services
 
+# Bugs
+## Basket - Remove Button
+### What is the issue?
+Remove button in the basket produces a 500 error.
+
+### What trouble shooting steps were taken?
+I researched the error and found out it was an error with the internal server.
+
+### How was the issue solved
+The issue was solved by correcting a typo in the view for the remove button.
+I found the source of the issue by reviewing all relevant code to the button.
+
+## Transfer of databases
+### What is the issue
+When attempting to transfer data from one database to another, I would run the ```loaddata``` command but an error would occor.
+
+### What Troubleshooting Steps Were Taken?
+I reseached the command and the relevant issue it was causing. After review the django documentation I learned that it was happening because the fixture I was calling did not exist.
+
+### How was the issue solved?
+I exported my data for brands and watches in a json file using the ```dumpdata``` command and then used ```loaddata``` command to import the data to new the database.
+
+## Deployment Error
+### What is the issue?
+Recieving application error when opening the deployed version of the site.
+
+### What troubleshooting steps were taken?
+I checked the deploy logs to see where the error occured.
+
+### How was the issue solved?
+The issue came from a typo in the Procfile, I typed ```web: gunicorn fine-dials.wsgi:application``` instead of ```web: gunicorn fine_dials.wsgi:application```. I corrected the typo and the issue was resolved.
+
+## Review Form Not Creating Review Instance
+### What is the issue?
+The Review form on the watch details page does not create an instance and therefore doesn't produce data to render.
+### What troubleshooting steps were taken?
+I have gone to slack and was given feed back on a typo in the form model. This was correct but it did not solve the issue.
+I have looked at django documentation on models and model forms, as well as rendering them in the template.
+
+### How was the problem solved?
+The issue was happening because the form was not being told who the user was that was creating the review. I added the following to the view for the review form ```review.user = request.user``` and this fixed the issue.
+
+## Unsloved Bugs
+### Mailchimp form
+On mobile, the mailchimp form cause side scrolling issues. I have used the Google Dev Tools to try and see why the issue is occuring but because the form uses Mailchimps custom css it makes findinf the source of the issue very difficult.
 # Deployment
 
 Although I did not for this particular project, for good practice, you should deploy early to Heroku in order to save time and avoid inconveniences later on.
