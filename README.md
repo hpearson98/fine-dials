@@ -358,6 +358,12 @@ The displayed products counter should display the amount of watches are being di
 #### Actual Outcome
 The displayed products counter displays the amount of watches are being displayed to the user depending on the search query results, as intended.
 
+### Super User Aunthenticated Edit Button
+#### Expected Result
+When a super user is authenticated, there should be a button displayed on the product card that allows the super user to edit their chosen product. It should take them to the edit watch page. It should only be visible to super users.
+#### Actual Outcome
+When a super user is authenticated, there is a button displayed on the product card that allows the super user to edit their chosen product. It does take them to the edit watch page. It is only visible to super users.
+
 ## Watch Detail Page
 ### Watch Overview
 #### Expected Result
@@ -386,7 +392,94 @@ The button works as expected, however the button does not function properly as y
 #### What Was Done to Resolve the Issue?
 To resolve the issue I simply removed the button element and just used an anchor element and used css to style it like a button. This made the whole area of the button clickable and functional.
 
-## Deployment
+### Super User Aunthenticated Edit Button
+#### Expected Result
+When a super user is authenticated, there should be a button displayed on the product card that allows the super user to edit their chosen product. It should take them to the edit watch page. It should only be visible to super users.
+#### Actual Outcome
+When a super user is authenticated, there is a button displayed on the product card that allows the super user to edit their chosen product. It does take them to the edit watch page. It is only visible to super users.
+
+### Reviews Section - Unauthenticated Users
+#### Expected Result
+In the reviews section, if the user is unauthenticated, it should show all reviews left for the watch they are looking at. However, it should not allow them to leave a review, instead it should display a message telling them to create an account or login to an existing one.
+#### Actual Outcome
+In the reviews section, if the user is unauthenticated, it shows all reviews left for the watch they are looking at. It does not allow them to leave a review, instead it displays a message telling them to create an account or login to an existing one. as expected.
+
+### Reviews Section - Authenticated User
+#### Expected Result
+In the reviews section, if the user is authenticated, it should show all reviews left for the watch they are looking at. It should also allow them to leave a review by displaying the review form. The form should be validated so that both the title and the body fields are required in order to submit the review.
+#### Actual Outcome
+In the reviews section, if the user is authenticated, it shows all reviews left for the watch they are looking at. It also allows them to leave a review by displaying the review form. The form is be validated so that both the title and the body fields are required in order to submit the review.
+
+## Basket Page
+### Product Info
+#### Expected Result
+If there is no products in the basket, it should display an empty basket message to the user and a keep shopping button that takes the user to the watches page so the user can view items to purchase. If there are items in the basket, it should display the image, name, quantity and price of all items in the items in the basket.
+#### Actual Outcome
+If there is no products in the basket, it displays an empty basket message to the user and a keep shopping button that takes the user to the watches page so the user can view items to purchase. If there are items in the basket, it displays the image, name, quantity and price of all items in the items in the basket.
+
+### Update Quantity/Remove Buttons
+#### Expected Result
+The quantity should be able to be adjusted via the add or minus buttons or input manually into the input field provided. If the current quantity is 1 or below then the minus button should be disabled so the user cannot enter an invalid number. If the user manually inputs a number less than 1 and tries to add it to the basket they should be given an error saying the number must be greater than or equal to 1.
+
+If the user clicks the remove button, for an item in their basket, all of that item should be removed, regardless of quantity.
+#### Actual Outcome
+The quantity is be able to be adjusted via the add or minus buttons or input manually into the input field provided. If the current quantity is 1 or below then the minus button should be disabled so the user cannot enter an invalid number. If the user manually inputs a number less than 1 and tries to add it to the basket they are be given an error saying the number must be greater than or equal to 1.
+
+If the user clicks the remove button, for an item in their basket, all of that item is removed, regardless of quantity.
+
+### Secure Checkout Button
+#### Expected Result
+This button should take the user to the checkout page, where they can finish their checkout.
+#### Actual Outcome
+This button takes the user to the checkout page, where they can finish their checkout.
+
+## Further Testing
+
+### Google Chrome DevTools Lighthouse
+I run the project twice through Lighthouse in Google Chrome DevTools; once in mobile and the other in desktop. Below are the results.
+* Lighthouse - Mobile:
+![Image of Lighthouse results for mobile](readme_images/fine_dials_lighthouse_mobile.png)
+
+* Lighthouse - Desktop:
+![Image of Lighthouse results for desktop](readme_images/fine_dials_lighthouse_desktop.png)
+
+#### Cross Platform testing
+* The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safar browsers.
+* The website has been tested on multiple devices with various viewport widths including a desktop, a laptop and an iPhone 14.
+
+# Technologies Used
+## Languages
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+## Libraries and Frameworks
+* [Django 3.2.20](https://docs.djangoproject.com/en/4.2/releases/3.2.20/) - Free and open source Python Web Framework
+* [Gunicorn 21.2.0](https://docs.gunicorn.org/en/stable/) - A Python WSGI HTTP server compatible with Django and used to run the project on Heroku
+* [PostregSQL 0.5.0](https://www.postgresql.org/) - A powerful, open-source object-relational database system
+* [Psycopg 2.9.6](https://www.psycopg.org/docs/) - A PostgreSQL database adapter for Python
+* [Amazon Web Services](https://aws.amazon.com/free/?gclid=CjwKCAiAvdCrBhBREiwAX6-6Uk577QOrNGjarTSnMfcEbmRN6B4HJHZXZiYeA3PdPZOuO9l1_c13oRoCdkcQAvD_BwE&trk=d5254134-67ca-4a35-91cc-77868c97eedd&sc_channel=ps&ef_id=CjwKCAiAvdCrBhBREiwAX6-6Uk577QOrNGjarTSnMfcEbmRN6B4HJHZXZiYeA3PdPZOuO9l1_c13oRoCdkcQAvD_BwE:G:s&s_kwcid=AL!4422!3!433803620861!e!!g!!amazon%20web%20services!1680401428!67152600204&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) - A persistent file store for media
+* [Heroku](https://dashboard.heroku.com/) - A cloud platform used to deploy the project
+* [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service
+SQLite3 - The database provided by Django
+* [Django-allauth](https://django-allauth.readthedocs.io/en/latest/) - - Integrated set of Django applications used for authentication and registration
+* [Bootstrap 5.2.3](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - A Framework for building responsive, mobile-fist sites
+
+## Tools
+* [Gitpod](https://www.gitpod.io/) - Used as a cloud based IDE
+* [Github](https://github.com/) - Used as an Agile development tool and version control
+* [Git](https://git-scm.com/) - Git was used for version control by using the Gitpod terminal to regularly commit to Git and push to Github.
+* [W3S Markup Validator](https://validator.w3.org/#validate_by_input) - The W3S Markup Validator was used to ensure the HTML code was free of any syntax errors.
+* [W3S CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - The W3S CSS Validator was used to ensure the CSS code was free of any syntax errors.
+* [Figma](https://www.figma.com/) - Figma was used in the design process to create wireframes for the project. This made it easy to visualize the layout of the website.
+* [Lucidchart](https://lucid.app/) - Lucidchart was used to create the Entity Relationship Diagram.
+* [Google Fonts](https://fonts.google.com/) - Google fonts was used to to import the EB Garamond and Roboto fonts used throughout the website.
+* [Hover.css](https://ianlunn.github.io/Hover/) - Hover.css was used on the social meadia icons in the footer.
+[Stripe](https://stripe.com/gb) - Used for payment processing services
+[Mailchimp](https://mailchimp.com/) - Used for email marketing services
+
+# Deployment
 
 Although I did not for this particular project, for good practice, you should deploy early to Heroku in order to save time and avoid inconveniences later on.
 
