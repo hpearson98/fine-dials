@@ -183,6 +183,51 @@ Three custom models have been implemented for this project:
 
 ![This is an image of my Entity Relatated Diagram](readme_images/fine_dials_erd.png)
 
+# Features
+## Existing Features
+### Header and Nav Bar
+The header and navigation are displayed across all pages and includes a link on the Logo which brings the user to the home page. For medium screen sizes and below a hamburger button appears, which expands to show the navigation list to the Home, all watches, brands, style, search bar, account and basket links. This helps reduce the clutter on the header by keeping the page links neatly stowed away until the user clicks the hamburger button.
+
+All links on desktop, are displayed openly across the header, which help the user to navigate easily from page to page, without having to revert back to the previous page via the back button. 
+
+When a user is authenticated the Register and Login links will be replaced with a Logout and profile link.
+
+Super users will get an additional link: Product Management, which will give them the ability to Create, Review, Update and Delete products.
+
+Below the nav bar is the free delivery banner, which displays the total the user has to spend to receive free delivery.
+![Screenshot of header and navigation bar](readme_images/fine_dials_nav.png)
+
+### Footer
+The footer, which is displayed across all pages, includes links to social media pages and a email marketing signup form from Mailchimp that the user can use to add themself to a contact list to receive marketing content.
+
+The social media links utilize the hover CSS pseudo-class which gives a good visual indication to the user that they are hovering over a link.
+
+![Screenshot of footer](readme_images/footer_screenshot.png)
+
+### Filter by Brand, style or gender
+In the nav bar, users can filter watches by their brand, style or gender.
+![Screenshot of filtering](readme_images/brand_filter_screenshot.png)
+
+### Sort search results
+Users can sort their search results by price - high to low, price - low to high, rating - high to low, rating - low to high, name - A-Z or name - Z-A.
+![Screenshot of sorting](readme_images/sorting_screenshot.png)
+### Home Page Content
+The home page features a jumbotron that invites the user to view the watches on offer.
+
+It also feautes links to related articles that can help the user learn more about watches.
+![Screenshot of the home page](readme_images/home_screenshot.png)
+
+### Product Card
+The product card displays the product image, brand, model, price, style and rating. The style is a link to display all watches of the same style.
+![Screenshot of product card](readme_images/product_card_screenshot.png)
+
+### Watch Overview
+The watch overview gives all of the key information  of the watch to the user in a format that is easy to read and understand, helping them to make a decision on their purchase.
+![Screenshot of watch details page](readme_images/watch_details_screenshot.png)
+
+### Review Section
+The review section allows users to look at reviews on a watch and allows authenticated users to leave a review on a watch. The form requires the subject and body fields to be filled in.
+
 # Testing
 ## Header and Nav Bar
 ### Logo link

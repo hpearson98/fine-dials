@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
+    <div class="row px-md-4">
         <div class="col-md-6 pt-3">
             {% if watch.image %}
             <a class="watch-detail-img" href="{{ watch.image.url }}" target="_blank">
@@ -26,7 +26,7 @@
             <p>Other Features: {{ watch.other_features|linebreaks }}</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row px-md-4">
         <div class="col-md-6 text center">
             {% if request.user.is_superuser %}
                 <div class="ml-3">
@@ -78,7 +78,7 @@
 
         </div>
     </div>
-    <div class="row">
+    <div class="row px-md-4">
         {% if user.is_authenticated %}
         <div class="col">
             <h3 class="review-form-title">Leave a review for the {{ watch.brand }} {{ watch.model }}</h3>
@@ -94,14 +94,17 @@
         </div>
         {% endif %}
     </div>
-    <h3 class="my-4">Reviews</h3>
+    <h3 class="my-4 px-md-4">Reviews</h3>
     {% for review in reviews %}
-    <div class="row">
+    <div class="row px-md-4">
         <div class="col">
             <div class="reviews-container overflow-scroll px-1 py-1">
                 <div class="review-wrapper px-3 my-3">
-                    <p>{{ review.title }}</p>
+                    <h2>{{ review.title }}</h2>
                     <p>{{ review.body }}</p>
+                    <p>{{ review.user }}</p>
+                    <p>{{ review.created_on }}</p>
+
                     <hr>
                 </div>
             </div>
