@@ -132,7 +132,7 @@ class Review(models.Model):
     watch = models.ForeignKey(Watch, related_name='reviews' ,on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(null=False, blank=False, max_length=50)
-    body = models.TextField(null=False, blank=False, max_length=250)
+    body = models.TextField(null=False, blank=False, max_length=500)
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

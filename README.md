@@ -225,8 +225,50 @@ The product card displays the product image, brand, model, price, style and rati
 The watch overview gives all of the key information  of the watch to the user in a format that is easy to read and understand, helping them to make a decision on their purchase.
 ![Screenshot of watch details page](readme_images/watch_details_screenshot.png)
 
+### Basket Preview
+when a watch is added to the basket, a message appears to the user showing a basket preivew. This give information such as current basket items, order total and how much more they have to spend to reach the free delivery freshhold.
+![Screenshot of basket preview](readme_images/basket_preview.png)
+
 ### Review Section
 The review section allows users to look at reviews on a watch and allows authenticated users to leave a review on a watch. The form requires the subject and body fields to be filled in.
+![Screenshot of the review form](readme_images/fine_dials_review_form.png)
+![Screenshot of review](readme_images/fine_dials_review.png)
+
+### Basket
+The basket page shows what is currently in the user's basket. From this page the user can adjust the quantity of the items in the basket or remove items from their basket. The user can also see the order cost and delivery cost. Once the user is happy they can use the checkout button to begin making payment.
+![Screenshot of the bakset page](readme_images/basket.png)
+
+### Checkout Form
+The checkout form allows the user to input contact, delivery and payment details. Required fields are first name, last name, email, phone number, street address1, street address 2, town/city and the card details. The payment system comes courtesy of the Strie API and it requires valid card information in order for the payment to be processed.
+![Screenshot of the checkout form](readme_images/checkout_form.png) 
+### Order summary
+Once the order is complete the user is taken to the checkout success page where they can see all of the details of the order.
+![Screenshot of order summary](readme_images/order_summary.png)
+
+### Profile
+On the profile page, the user can update delivery information and look at their order history. They can click a link on an individual order to get a detailed look at that order information. This page is only accessible to authenticated users.
+![Screenshot of profile page](readme_images/profile_page.png)
+
+### Product management - Add product
+When a super user is authenicated, they can access the add product page where they can fill the form to create and add products from inside the site. This is only accessible to superusers.
+![Screenshot of add product form](readme_images/add_product_form.png)
+
+### Product management - Product card
+When a superuser is authenicated they have extra features from the product cards. The have edit and delete buttons allowing them to update or remove products in the database.
+![Screenshot of superuser product card](readme_images/superuser_product_card.png)
+
+### Product Management - Edit product
+A superuser can edit the values of a product. This would be useful when there a changes in price or when the product is rebranded.
+![Screenshot of edit product form](readme_images/edit_product.png)
+
+### Product management - Delete product
+A superuser can delete a product from the database. This would be useful if a product was discontinued or had to be removed for any reason. When the bin icon is clicked on the product card the product is deleted and a confirmation message is displayed.
+![Screenshot of product delete success message](readme_images/delete_product.png)
+
+## Future Features
+### Wishlist
+
+### Dedicated brand pages
 
 # Testing
 ## Header and Nav Bar
