@@ -271,6 +271,11 @@ The signup form is based from django-allauth and it requires an email address an
 
 ### Account login
 The login form is based from django-allauth and it requires the user to input a verified email address and the matching password.
+![Screenshot of login page](readme_images/login.png)
+
+### Account logout
+The logout screen requires a user to confirm they want to logout using a button and the functionality comes courtesy of allauth.
+![Screenshot of logout page](readme_images/logout.png)
 
 ## Future Features
 ### Wishlist
