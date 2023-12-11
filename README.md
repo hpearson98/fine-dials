@@ -183,6 +183,31 @@ Three custom models have been implemented for this project:
 
 ![This is an image of my Entity Relatated Diagram](readme_images/fine_dials_erd.png)
 
+### Skeleton / Wireframes
+
+Using wireframes greatly aided the planning process and allowed me to have a clear direction I want the structure of the project to go. I completed wireframes for small, medium and large screen sizes to help map their structure.
+
+[Click here to view the wireframes](readme_images/wireframes.pdf)
+
+> [!NOTE]
+> Wireframes are not coming out quite as planned but the primary structure is still visible.
+
+### Surface
+
+#### Colour Scheme
+
+The colour scheme that I used was very monochromatic, with splashes of colour for items of interest such as buttons or links.
+
+The primary background colour is White with black text for easy readablility. The jumbotron used on the home page is a contrast to this colour scheme, which has a black background and white text, to indicate the start and end of a new section.
+
+#### Typography
+
+The two fonts I used for this project were Unna and Roboto. Unna was used for the main headings of the site and Roboto was used for the main body of text. Unna is a serif based font while Roboto is a sans-serif which enabled them to offer a good contrast and compliment eachother well while still being easily readable.
+
+#### Icons
+
+Icons were used to display the social media icons in the footer and in the header as well as in other areas of the site as I found it an easy and intuitive way of displaying the links to the user. Aria-labels are used on the links to help assist screen readers.
+
 # Features
 ## Existing Features
 ### Header and Nav Bar
@@ -276,6 +301,10 @@ The login form is based from django-allauth and it requires the user to input a 
 ### Account logout
 The logout screen requires a user to confirm they want to logout using a button and the functionality comes courtesy of allauth.
 ![Screenshot of logout page](readme_images/logout.png)
+
+### Custom 404 handler
+If a user tries to find a page that does no exist, they will be greeted by the custom error 404 handler page, where the user can easily navigate back to the site.
+![Screenshot of custom 404 page](readme_images/404page.png)
 
 ## Future Features
 ### Wishlist
@@ -582,6 +611,15 @@ The profile details form should hold all relevant information for the user and i
 #### Actual Outcome
 The profile details form holds all relevant information for the user and it is be able to be updated by the user and saved. However, this information is not transfered across to the checkout form for convience and a faster checkout so the user does not have to put in their information for each order.
 #### What Was Done to Fix the Issue?
+
+### Custom error 404 handler
+#### Expected Result
+When the user navigates to a page that does not exist, they should be greeted by a custom error 404 handler page, where they can navigate back to the site easily.
+
+#### Actual Outcome
+When the user navigates to a page that does not exist, they are greeted by a custom error 404 handler page, where they can navigate back to the site easily.
+![Screenshot of error 404 handler](readme_images/404page.png)
+
 ## Further Testing
 
 ### Google Chrome DevTools Lighthouse
@@ -747,6 +785,8 @@ DATABASES = {
 4. If using gitpod another key needs to be added in order for the deployment to succeed.  This is PORT with the value of 8000.
 
 ### Amazon Web Services Setup
+
+
 
 ### Setup the Templates Directory
 
