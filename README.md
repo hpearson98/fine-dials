@@ -265,6 +265,13 @@ A superuser can edit the values of a product. This would be useful when there a 
 A superuser can delete a product from the database. This would be useful if a product was discontinued or had to be removed for any reason. When the bin icon is clicked on the product card the product is deleted and a confirmation message is displayed.
 ![Screenshot of product delete success message](readme_images/delete_product.png)
 
+### Account registration
+The signup form is based from django-allauth and it requires an email address and two matching passwords in order to be valid. If the form is valid an email will be sent to the email address provided to verify the account.
+![Screenshot of signup form](readme_images/signup.png)
+
+### Account login
+The login form is based from django-allauth and it requires the user to input a verified email address and the matching password.
+
 ## Future Features
 ### Wishlist
 
