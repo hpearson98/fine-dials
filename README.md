@@ -995,14 +995,16 @@ Documentation I often refered to:
 * [Django documentation](https://docs.djangoproject.com/en/3.2/)
 * [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 * [Django-Allauth documentation](https://django-allauth.readthedocs.io/en/latest/)
-
-Other sources I found useful:
-* 
-* 
-* 
-* 
+ 
 
 # Media
+
+## Brands
+The brands used in the project are of no affiliation to me, I just really admire some of their watches. The Brands used are linked below.
+* [Tissot](https://en.wikipedia.org/wiki/Tissot)
+* [Hamilton](https://en.wikipedia.org/wiki/Hamilton_Watch_Company)
+* [Seiko](https://en.wikipedia.org/wiki/Seiko)
+* [Casio](https://en.wikipedia.org/wiki/Casio)
 
 ## Picture sources
 
