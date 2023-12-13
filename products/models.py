@@ -129,6 +129,9 @@ class Watch(models.Model):
 
 
 class Review(models.Model):
+    """
+    Model for product reviews
+    """
     watch = models.ForeignKey(Watch, related_name='reviews' ,on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(null=False, blank=False, max_length=50)

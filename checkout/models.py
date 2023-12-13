@@ -7,7 +7,10 @@ from django.conf import settings
 from products.models import Watch
 from profiles.models import UserProfile
 
-
+"""
+The majority of the code below is based from the 
+Code Institute Boutique Ado walkthroughproject
+"""
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,

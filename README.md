@@ -986,7 +986,9 @@ Forking allows you to view and edit the code without affecting the original repo
 
 The walkthrough project listed below were used purely for inspiration. I used their ideas and methods and simply put them into the context of my own project.
 
-However, this project was the first time I create an e-commerce so I felt as though I had to rely on the walkthrough project. It was also the first time using services such as [Stripe](https://stripe.com/gb) and [AWS](https://aws.amazon.com/)
+However, this project was the first time I create an e-commerce so I felt as though I had to rely on the walkthrough project. It was also the first time using services such as [Stripe](https://stripe.com/gb) and [AWS](https://aws.amazon.com/).
+
+Becasue of the reasons above, the basket and payment features share similar characteristics of the walkthrough project as I learned from this project about those elements.
 * Code Institute - Boutique Ado
 
 Documentation I often refered to:
